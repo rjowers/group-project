@@ -1,0 +1,67 @@
+
+
+@import "bulma";
+
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.top-barbox {
+border-bottom: solid;
+height: 150px;
+background-color: #ce695b;
+}
+
+.logo-box {
+  display: inline-block;
+
+}
+
+
+.logo{
+  padding-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  height: 150px;
+}
+
+.words{
+  display: inline-block;
+  font-size: 80px;
+}
+
+.icon-box {
+  border: solid;
+  background-color: #5bc1ce;
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 219px;
+  text-align: center;
+  padding-top: 20px;
+  float: right;
+  margin-top: 22px;
+  margin-right: 20px;
+
+}
+
+.connect{
+  font-size: 20px;
+}
+.icons{
+padding-top: 0px;
+text-align: center;
+
+
+
+
+li{
+  display: inline;
+}
+
+
+}

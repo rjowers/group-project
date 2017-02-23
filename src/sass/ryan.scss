@@ -72,12 +72,13 @@ li{
 
 //////new blurbs css
 
-.blurbsbox {
+.newsblurbsbox {
     width: 300px;
     height: 238px;
     border: solid;
     display: inline-block;
       overflow: hidden;
+      float: left;
 
 
 
@@ -111,7 +112,8 @@ li{
 
     .post{
       font-size: 12px;
-
+      padding-left: 5px;
+      padding-right: 5px;
       display: inline-block;
 
       .read{
@@ -133,4 +135,66 @@ li{
   transition: height .5s;
   width: 300px;
   height: 500px;
+}
+
+
+//////////special blurbs
+
+.specials-box{
+width: 300px;
+height: 238px;
+border: solid;
+display: inline-block;
+float: left;
+
+
+.borders {
+    border-bottom: solid #C5C5C5 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+.Today{
+  font-size: 18px;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+
+.price{
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+img{
+  width: 264px;
+  height: 98px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2{
+font-size: 12px;
+font-style: italic;
+font-weight:bold;
+display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+p{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+
 }

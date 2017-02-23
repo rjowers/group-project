@@ -24,9 +24,7 @@ function writeOurStory(event){
 }
 
 function writeMenu(event){
-  $(".menu-info-container").html(`
-    This gonna be a menu
-  `);
+  getMenu().then(printMenu);
 }
 
 function writeReservations(event){
@@ -42,9 +40,25 @@ function getMenu () {
   });
 }
 
-getMenu().then(printMenu);
-
 function printMenu(data){
+  $(".menu-info-container").html(`
+    <div>Beers, Food, and Games</div>
+    <div class="divide-line"></div>
+    <div class="menu-section-title">Beer</div>
+    <div class="divide-line"></div>
+    <div class="menu-item+menu-price-container">
+      <div class="menu-item">${data.Beer[0].item}</div>
+      <div class="menu-item-price">${data.Beer[0].price}</div>
+    </div>
+    <div class="menu-item-description">${data.Beer[0].style}</div>
+    <div class="menu-item-description">${data.Beer[0].description}</div>
+    <div class="menu-item-description">${data.Beer[0].allergies}</div>
+    <div class="menu-item-description">${data.Beer[0].favorite}</div>
+
+
+
+
+  `);
   console.log(data);
 }
 

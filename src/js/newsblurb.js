@@ -1,12 +1,12 @@
 import $ from 'jquery';
 
-function getNews(data, callback) {
+function getNews() {
     $.ajax({
         url: `https://json-data.herokuapp.com/restaurant/news/1`,
         dataType: "json",
-        data: {
-            q: data
-        },
+        // data: {
+        //     q: data
+        // },
         success: makenewsblurb
     })
 };
@@ -17,7 +17,7 @@ function makenewsblurb (data) {
   console.log (data)
   $(".blurbs").append(
     `
-    <div class ="blurbsbox">
+    <div class ="newsblurbsbox">
       <h1>Latest News </h1>
       <h2 class="title">${data.title}</h2>
       <h2 class="date">${data.date_published}</h1>
@@ -30,14 +30,14 @@ function makenewsblurb (data) {
     `)
 }
 
-$(".blurbsbox").addClass("close");
-
-var open
-function expand() {
-  $(".blurbsbox").removeClass('close').addClass('open');
-}
-
-$(".blurbsbox").on('click',expand);
+// $(".newsblurbsbox").addClass("close");
+//
+// var open
+// function expand() {
+//   $(".newsblurbsbox").removeClass('close').addClass('open');
+// }
+//
+// $(".newsblurbsbox").on('click',expand);
 
 
 export {getNews}

@@ -13,6 +13,7 @@
 
 .menu-info-container {
   border: 1px solid gray;
+  padding: 10px;
 }
 
 .menu-item-price {
@@ -20,5 +21,13 @@
 }
 
 .menu-item {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left{
   float: left;
 }

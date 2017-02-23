@@ -78,7 +78,7 @@ li{
     border: solid;
     display: inline-block;
       overflow: hidden;
-      float: left;
+
 
 
 
@@ -116,9 +116,7 @@ li{
       padding-right: 5px;
       display: inline-block;
 
-      .read{
-        display: block;
-      }
+
 
 
 
@@ -126,16 +124,16 @@ li{
     }
 }
 
-.close{
-  width: 300px;
-  height: 238px;
-}
-
-.open {
-  transition: height .5s;
-  width: 300px;
-  height: 500px;
-}
+// .close{
+//   width: 300px;
+//   height: 238px;
+// }
+//
+// .open {
+//   transition: height .5s;
+//   width: 300px;
+//   height: 500px;
+// }
 
 
 //////////special blurbs
@@ -145,7 +143,8 @@ width: 300px;
 height: 238px;
 border: solid;
 display: inline-block;
-float: left;
+padding-top: 25px;
+
 
 
 .borders {
@@ -197,4 +196,27 @@ p{
 }
 
 
+}
+
+///////////////mapsblurb
+
+.mapsblurbsbox{
+  border: solid;
+  width: 300px;
+  height: 238px;
+  display: inline-block;
+  padding-top: 85px;
+
+}
+
+
+.info-box1{
+  display: inline-block;
+}
+.info-box2{
+  display: inline-block;
+}
+
+.info-box3{
+  display: inline-block;
 }

@@ -1,5 +1,21 @@
  @import "bulma";
 
+#is-black {
+  background-color: black;
+}
+
+.med-size {
+  width: 350px;
+}
+
+.small-size {
+  width: 155px;
+}
+
+.med-small-size{
+  width: 250px;
+}
+
 .our-story {
   display: inline-block;
   border: 1px solid gray;

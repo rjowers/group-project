@@ -41,15 +41,13 @@ function getMenu () {
 }
 
 function printMenu(data){
-
-
   $(".menu-info-container").html(`
     <div>Beers, Food, and Games</div>
     <div class="divide-line1"></div>
     <div class="menu-section-title">Beer</div>
     <div class="divide-line2"></div>
   `);
-  for(var count = 0; count < data.Beer.length; count++){
+  for(var count = data.Beer.length - 1; count >= 0; count--){
     $(".divide-line2").after(`
     <div class="menu-item-menu-price-container">
       <div class="menu-item">${data.Beer[count].item}</div>............................
@@ -57,24 +55,63 @@ function printMenu(data){
     </div>
     <div class="menu-item-style">${data.Beer[count].style}</div>
     <div class="menu-description-allergies-favorite-container">
-      <div class="menu-item-description float-left">${data.Beer[0].description}</div>...
-      <div class="allergies-favorite float-right"></div>
+      <div class="menu-item-description float-left">${data.Beer[count].description}</div>...
+      <div class="favorite${count} float-right"></div>
+      <div class="allergies${count} float-right"></div>
     </div>
     `);
 
-
     if(data.Beer[count].allergies === 1){
-      $(".allergies-favorite").html(`
+      $(`.allergies${count}`).html(`
       <i class="float-right fa fa-exclamation-triangle" aria-hidden="true"></i>`);
+    }else{
+      $(`.allergies${count}`).html("");
     }
 
     if(data.Beer[count].favorite === 1){
-      var currentHtml = $(".allergies-favorite").html()
-      currentHtml += `<i class="float-right fa fa-star-o" aria-hidden="true"></i>`;
-      $(".allergies-favorite").html(currentHtml);
+      $(`.favorite${count}`).html(`
+      <i class="float-right fa fa-star-o" aria-hidden="true"></i>`);
+    }else{
+      $(`.favorite${count}`).html("");
     }
-
   }
+
+  $(".menu-info-container").append(`
+    <div class="menu-section-title">Entrees</div>
+    <div class="divide-line3"></div>
+    `);
+  for(var i = data.entrees.length - 1; i>= 0; i--){
+  $(".divide-line3").after(`
+  <div class="menu-item-menu-price-container">
+    <div class="menu-item">${data.entrees[i].item}</div>............................
+    <div class="menu-item-price">${data.entrees[i].price}</div>
+  </div>
+<!--  <div class="menu-item-style">${data.entrees[i].style}</div>  -->
+  <div class="menu-description-allergies-favorite-container">
+    <div class="menu-item-description float-left">${data.entrees[i].description}</div>...
+    <div class="favorite1${i} float-right"></div>
+    <div class="allergies1${i} float-right"></div>
+  </div>
+  `);
+
+  if(data.entrees[i].allergies === 1){
+    $(`.allergies1${i}`).html(`
+    <i class="float-right fa fa-exclamation-triangle" aria-hidden="true"></i>`);
+  }else{
+    $(`.allergies1${i}`).html("");
+  }
+
+  if(data.entrees[i].favorite === 1){
+    $(`.favorite1${i}`).html(`
+    <i class="float-right fa fa-star-o" aria-hidden="true"></i>`);
+  }else{
+    $(`.favorite1${i}`).html("");
+  }
+}
+
+
+
+
   console.log(data);
 }
 

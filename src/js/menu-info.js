@@ -31,51 +31,36 @@ function writeMenu(event){
 function writeReservations(event){
   $(".menu-info-container").html(`
 
+    <label class="label">Full Name</label>
     <p class="control">
-      <input class="input is-small" type="text" placeholder="Small input">
+      <input class="input med-size" type="text" placeholder="Please be able to match your ID.">
     </p>
+    <label class="label">Number of Guests</label>
     <p class="control">
-      <input class="input" type="text" placeholder="Normal input">
+      <input class="input small-size" type="number" placeholder="6 guests per table.">
     </p>
+    <label class="label">Date</label>
     <p class="control">
-      <input class="input is-medium" type="text" placeholder="Medium input">
+      <input class="input  med-small-size" type="date" placeholder="At least three days in advance.">
     </p>
+    <label class="label">Special Notes</label>
     <p class="control">
-      <input class="input is-large" type="text" placeholder="Large input">
+      <textarea class="textarea med-size" placeholder="We strive to do our best to accomadate our customers needs."></textarea>
     </p>
-    <p class="control">
-      <span class="select is-small">
-        <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
-        </select>
-      </span>
-    </p>
+    <label class="label">Seating Preference</label>
     <p class="control">
       <span class="select">
         <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
+          <option>Indoor</option>
+          <option>Outdoor</option>
         </select>
       </span>
     </p>
-    <p class="control">
-      <span class="select is-medium">
-        <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
-        </select>
-      </span>
-    </p>
-    <p class="control">
-      <span class="select is-large">
-        <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
-        </select>
-      </span>
-    </p>
-
+    <div class="control is-grouped">
+      <p class="control">
+        <button id="is-black" class="button is-primary">Submit</button>
+      </p>
+    </div>
   `);
 }
 

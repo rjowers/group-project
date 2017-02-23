@@ -42,7 +42,7 @@ function getMenu () {
 
 function printMenu(data){
   $(".menu-info-container").html(`
-    <div>Beers, Food, and Games</div>
+    <div class="menu-title">Beer, Food, and Games</div>
     <div class="divide-line1"></div>
     <div class="menu-section-title">Beer</div>
     <div class="divide-line2"></div>
@@ -81,17 +81,17 @@ function printMenu(data){
     <div class="divide-line3"></div>
     `);
   for(var i = data.entrees.length - 1; i>= 0; i--){
-  $(".divide-line3").after(`
-  <div class="menu-item-menu-price-container">
-    <div class="menu-item">${data.entrees[i].item}</div>............................
-    <div class="menu-item-price">${data.entrees[i].price}</div>
-  </div>
-<!--  <div class="menu-item-style">${data.entrees[i].style}</div>  -->
-  <div class="menu-description-allergies-favorite-container">
-    <div class="menu-item-description float-left">${data.entrees[i].description}</div>...
-    <div class="favorite1${i} float-right"></div>
-    <div class="allergies1${i} float-right"></div>
-  </div>
+    $(".divide-line3").after(`
+    <div class="menu-item-menu-price-container">
+      <div class="menu-item">${data.entrees[i].item}</div>............................
+      <div class="menu-item-price">${data.entrees[i].price}</div>
+    </div>
+
+    <div class="menu-description-allergies-favorite-container">
+      <div class="menu-item-description float-left">${data.entrees[i].description}</div>...
+      <div class="favorite1${i} float-right"></div>
+      <div class="allergies1${i} float-right"></div>
+    </div>
   `);
 
   if(data.entrees[i].allergies === 1){
@@ -109,7 +109,38 @@ function printMenu(data){
   }
 }
 
+$(".menu-info-container").append(`
+  <div class="menu-section-title">Games</div>
+  <div class="divide-line4"></div>
+  `);
+for(var x = data.games.length - 1; x >= 0; x--){
+  $(".divide-line4").after(`
+  <div class="menu-item-menu-price-container">
+    <div class="menu-item">${data.games[x].item}</div>............................
+    <div class="menu-item-price">${data.games[x].price}</div>
+  </div>
 
+  <div class="menu-description-allergies-favorite-container">
+    <div class="menu-item-description float-left">${data.games[x].description}</div>...
+    <div class="favorite2${x} float-right"></div>
+    <div class="multi-player${x} float-right"></div>
+  </div>
+`);
+
+if(data.games[x].multiplayer === 1){
+  $(`.multi-player${x}`).html(`
+  <i class="fa fa-users" aria-hidden="true"></i>`);
+}else{
+  $(`.multi-player${x}`).html("");
+}
+
+if(data.games[x].favorite === 1){
+  $(`.favorite2${x}`).html(`
+  <i class="float-right fa fa-star-o" aria-hidden="true"></i>`);
+}else{
+  $(`.favorite2${x}`).html("");
+}
+}
 
 
   console.log(data);

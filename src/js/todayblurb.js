@@ -15,7 +15,7 @@ getFood()
 
 function putFood (data) {
   console.log (data)
-  $(".blurbs").append(
+  $(".info-box2").append(
     `
     <div class ="specials-box">
     <div class="borders"

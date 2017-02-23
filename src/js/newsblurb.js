@@ -15,9 +15,10 @@ getNews()
 
 function makenewsblurb (data) {
   console.log (data)
-  $(".blurbs").append(
+  $(".info-box1").prepend(
     `
     <div class ="newsblurbsbox">
+    hello
       <h1>Latest News </h1>
       <h2 class="title">${data.title}</h2>
       <h2 class="date">${data.date_published}</h1>

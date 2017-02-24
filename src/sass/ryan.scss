@@ -5,6 +5,7 @@
 
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
+
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
@@ -18,6 +19,7 @@ background-color: #ce695b;
 
 .logo-box {
   display: inline-block;
+  width: 100px;
 
 }
 
@@ -26,7 +28,28 @@ background-color: #ce695b;
   padding-top: 0px;
   padding-bottom: 4px;
   padding-left: 20px;
+  margin-left: 20px;
   height: 150px;
+}
+
+.bear {
+  display: inline-block;
+}
+
+.bear-pic{
+  height: 150px;
+  margin-left: 150px;
+}
+
+.bear-pic2{
+  height: 150px;
+  margin-left: 100px;
+  -moz-transform: scaleX(-1);
+ -o-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: FlipH;
+ -ms-filter: "FlipH";
 }
 
 .words{
@@ -42,10 +65,13 @@ background-color: #ce695b;
   height: 100px;
   width: 219px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 8px;
   float: right;
   margin-top: 22px;
   margin-right: 20px;
+  -moz-border-radius: 15px;
+border-radius: 15px;
+font-size: 24px;
 
 }
 
@@ -78,8 +104,11 @@ li{
     border: solid;
     display: inline-block;
       overflow: hidden;
-      margin-left: 150px;
+      margin-left: 140px;
       margin-top: 20px;
+      -moz-border-radius: 15px;
+border-radius: 15px;
+background-color: #FAF9F5;
 
 
 
@@ -148,7 +177,9 @@ display: inline-block;
 padding-top: 5px;
 margin-left: 50px;
 margin-top: 20px;
-
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color: #FAF9F5;
 
 
 .borders {
@@ -182,6 +213,8 @@ img{
   height: 98px;
   margin-left: 20px;
   margin-right: 20px;
+  -moz-border-radius: 15px;
+border-radius: 15px;
 }
 
 h2{
@@ -212,6 +245,9 @@ p{
   padding-top: 0px;
   margin-left: 50px;
   margin-top: 20px;
+  -moz-border-radius: 15px;
+border-radius: 15px;
+background-color: #FAF9F5;
 
   .our-location{
     font-size: 16px;
@@ -227,7 +263,7 @@ p{
 
   div{
 
-    padding-left: 15px
+    padding-left: 15px;
   }
 .address{
   padding-top: 10px;
@@ -261,4 +297,17 @@ p{
 .blurbs{
   display: flex;
   flex-direction: row;
+  background-color: #FDF3E7;
 }
+
+
+
+
+// It all began on February 24, 2017, when Ryan Jowers and Josh Bradford opened the first Iron Bear Pub in Atlanta, Georgia.
+//
+// Inspired by their lives hunting bears for a living in the Alaskan wilderness, Ryan and Josh sought to bring that life style of rugged individualism to the heart of Atlanta. Their goal was to not just own another ordinary pub and not just a restaurant with great food, but a place where everyone, of all walks of life, could come and have a great meal and great fun for a great price.
+//
+// We like to brag about our Hand-Cut Cowboy Cut Rib Eye, exotic Ostrich Filet Mignon, all natural Atlantic Sea Scallops, and most renown local craft beers hand-selected by the founders. Everything we do goes into making our hearty meals stand out. We handcraft almost everything we serve. We provide larger portions so you get more food for your dollar. And if you want an Ice Cold Beer to wash it all down with — well, we have those, too.
+//
+// Our food’s not the only thing that’s Legendary at the Iron Bear— our fun is too! From our trivia nights, to our live music, to our bare-nuckle boxing competitions, you’ll enjoy every second you spend in at the Iron Bear Pub.
+// Our team has an incredible sense of pride in everything we do. Our passion ensures you have a Legendary Experience every time.

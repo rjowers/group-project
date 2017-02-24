@@ -1,50 +1,30 @@
-import $ from 'jquery';
+import { flickrToken } from "./token.js";
 
-//import { token } from './token';
-
-//var info = []
-
-//${token}
+import $ from "jquery";
 
 function getData (search) {
    return $.ajax({
-      url: `http://api.flickr.com/services/rest/?`,
+      url: `https://api.flickr.com/services/rest/`,
       dataType: 'json',
-    //  data: {
-    //    q: search
-    //  }
+    data: {
+      method: "flickr.photos.getSizes",
+      api_key: "5e869a2e897ce380cedd57cf87d3f036",
+      photo_id: "298845578",
+      format: "json",
+      nojsoncallback: "1"
+     }
   });
 }
 
 
 
-export { getData};
-/*
+function printData(data){
+  console.log(data)
+  var url = data.sizes.size[5].source;
+  console.log(data.sizes.size[5].source);
+  console.log(url);
 
-import $ from "jquery";
-import {writeCard} from "./template"
-
-function getUser () {
-  return $.ajax({
-    url: `https://api.github.com/users/farstrider777`,
-    dataType: "json",
-  });
+  $(".landing").append(`<img class="landing-pic" src="${url}">`)
 }
 
-var infoObject = {name: 0, login: 0, email: 0,
-  company: 0, blog: 0, bio: 0, pic: 0, hurl: 0};
-
-function info(data, success, xmlobject){
-  infoObject.name = data.name;
-  infoObject.login = data.login;
-  infoObject.email = data.email;
-  infoObject.company = data.company;
-  infoObject.blog = data.blog;
-  infoObject.bio = data.bio;
-  infoObject.pic = data.avatar_url;
-  infoObject.hurl = data.html_url;
-  writeCard(infoObject);
-}
-
-export { info, getUser }
-*/
+export {getData, printData}

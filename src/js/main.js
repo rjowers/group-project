@@ -5,13 +5,23 @@ import {getFood} from "./todayblurb.js"
 import {putFood} from "./todayblurb.js"
 import {makemapsblurb} from "./mapblurb.js"
 
+
 import {writeMenuInfo} from "./menu-info"
 
 
 import {getData, printData} from "./landing.js"
 
-maketopbar();
 
+
+import {foodPhotos} from "./food-photos.js"
+
+
+
+
+
+
+maketopbar();
+foodPhotos();
 writeMenuInfo();
 
 

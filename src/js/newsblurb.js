@@ -23,12 +23,14 @@ function makenewsblurb (data) {
       <h2 class="date">${data.date_published}</h1>
       <p class="post">${data.post}</p>
       <div class="read">... Read More</div>
-
-
     </div>
 
     `)
 }
+
+
+
+
 
 // $(".newsblurbsbox").addClass("close");
 //
@@ -38,6 +40,7 @@ function makenewsblurb (data) {
 // }
 //
 // $(".newsblurbsbox").on('click',expand);
+
 
 
 export {getNews}

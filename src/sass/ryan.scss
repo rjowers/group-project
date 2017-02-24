@@ -300,6 +300,37 @@ background-color: #FAF9F5;
   background-color: #FDF3E7;
 }
 
+///////////////food-photos
+
+.food-photos{
+  background-color: #FDF3E7;
+}
+
+.food{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.food-boxes{
+  height: 216px;
+  width: 216px;
+  display: inline-block;
+  padding-right: 20px;
+  margin-left: 30px;
+
+img{
+  -moz-border-radius: 15px;
+border-radius: 15px;
+}
+}
+
+
+// .column{
+//   height: 100px;
+//   width: 100px;
+//   border: solid;
+// }
 
 
 

@@ -18,9 +18,11 @@ function writeMenuInfo(){
 
 function writeOurStory(event){
   $(".menu-info-container").html(`
-    This is a story all about how my life got flip turned upside down,
-    and I'd like to take a minute just sit right there, tell you how
-    I became the prince of a town called Be-lair
+   It all began on February 24, 2017, when Ryan Jowers and Josh Bradford opened the first Iron Bear Pub in Atlanta, Georgia.
+   Inspired by their lives hunting bears for a living in the Alaskan wilderness, Ryan and Josh sought to bring that life style of rugged individualism to the heart of Atlanta. Their goal was to not just own another ordinary pub and not just a restaurant with great food, but a place where everyone, of all walks of life, could come and have a great meal and great fun for a great price.
+   We like to brag about our Hand-Cut Cowboy Cut Rib Eye, exotic Ostrich Filet Mignon, all natural Atlantic Sea Scallops, and most renown local craft beers hand-selected by the founders. Everything we do goes into making our hearty meals stand out. We handcraft almost everything we serve. We provide larger portions so you get more food for your dollar. And if you want an Ice Cold Beer to wash it all down with — well, we have those, too.
+   Our food’s not the only thing that’s Legendary at the Iron Bear— our fun is too! From our trivia nights, to our live music, to our bare-nuckle boxing competitions, you’ll enjoy every second you spend in at the Iron Bear Pub.
+   Our team has an incredible sense of pride in everything we do. Our passion ensures you have a Legendary Experience every time.
   `);
 }
 

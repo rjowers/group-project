@@ -79,5 +79,28 @@
 }
 
 .landing-pic {
-  width: 100%;
+  width: 49%;
+  display: inline-block;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.scroll-left {
+  width: 25%;
+  display: inline-block;
+
+}
+
+.scroll-right {
+  width: 25%;
+  display: inline-block;
+  -moz-transform: scaleX(-1);
+ -o-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: FlipH;
+ -ms-filter: "FlipH";
 }

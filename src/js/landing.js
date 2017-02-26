@@ -24,7 +24,11 @@ function printData(data){
   console.log(data.sizes.size[5].source);
   console.log(url);
 
-  $(".landing").append(`<img class="landing-pic" src="${url}">`)
+  $(".landing").append(`
+    <img class="scroll-right" src="./images/scroll2.jpeg">
+    <img class="landing-pic" src="${url}">
+    <img class="scroll-left" src="./images/scroll2.jpeg">
+    `)
 }
 
 export {getData, printData}

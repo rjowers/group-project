@@ -10,12 +10,13 @@ function printMenu(data){
   for(var count = data.Beer.length - 1; count >= 0; count--){
     $(".divide-line2").after(`
     <div class="menu-item-menu-price-container">
-      <div class="menu-item">${data.Beer[count].item}</div>............................
+      <div class="menu-item">${data.Beer[count].item}</div>
+      <img class="small-bear3" src="./images/bear4.png"/>
       <div class="menu-item-price">${data.Beer[count].price}</div>
     </div>
     <div class="menu-item-style">${data.Beer[count].style}</div>
     <div class="menu-description-allergies-favorite-container">
-      <div class="menu-item-description float-left">${data.Beer[count].description}</div>...
+      <div class="menu-item-description float-left">${data.Beer[count].description}</div>-
       <div class="favorite${count} float-right"></div>
       <div class="allergies${count} float-right"></div>
     </div>
@@ -43,12 +44,13 @@ function printMenu(data){
   for(var i = data.entrees.length - 1; i>= 0; i--){
     $(".divide-line3").after(`
     <div class="menu-item-menu-price-container">
-      <div class="menu-item">${data.entrees[i].item}</div>............................
+      <div class="menu-item">${data.entrees[i].item}</div>
+      <img class="small-bear2" src="./images/bear2.png"/>
       <div class="menu-item-price">${data.entrees[i].price}</div>
     </div>
 
     <div class="menu-description-allergies-favorite-container">
-      <div class="menu-item-description float-left">${data.entrees[i].description}</div>...
+      <div class="menu-item-description float-left">${data.entrees[i].description}</div>-
       <div class="favorite1${i} float-right"></div>
       <div class="allergies1${i} float-right"></div>
     </div>
@@ -76,12 +78,13 @@ $(".menu-info-container").append(`
 for(var x = data.games.length - 1; x >= 0; x--){
   $(".divide-line4").after(`
   <div class="menu-item-menu-price-container">
-    <div class="menu-item">${data.games[x].item}</div>............................
+    <div class="menu-item">${data.games[x].item}</div>.
+    <img class="small-bear1" src="./images/bear3.png"/>
     <div class="menu-item-price">${data.games[x].price}</div>
   </div>
 
   <div class="menu-description-allergies-favorite-container">
-    <div class="menu-item-description float-left">${data.games[x].description}</div>...
+    <div class="menu-item-description float-left">${data.games[x].description}</div>-
     <div class="favorite2${x} float-right"></div>
     <div class="multi-player${x} float-right"></div>
   </div>

@@ -45,7 +45,7 @@ function printMenu(data){
     $(".divide-line3").after(`
     <div class="menu-item-menu-price-container">
       <div class="menu-item">${data.entrees[i].item}</div>
-      <img class="small-bear2" src="./images/bear2.png"/>
+      <img class="small-bear2" src="./images/bear2.jpg"/>
       <div class="menu-item-price">${data.entrees[i].price}</div>
     </div>
 
@@ -79,7 +79,7 @@ for(var x = data.games.length - 1; x >= 0; x--){
   $(".divide-line4").after(`
   <div class="menu-item-menu-price-container">
     <div class="menu-item">${data.games[x].item}</div>.
-    <img class="small-bear1" src="./images/bear3.png"/>
+    <img class="small-bear1" src="./images/bear4.jpg"/>
     <div class="menu-item-price">${data.games[x].price}</div>
   </div>
 

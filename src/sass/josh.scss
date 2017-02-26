@@ -17,16 +17,35 @@
 }
 
 .our-story {
+  padding: 10px;
   display: inline-block;
   border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #CE695B;
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
 }
 .menu {
+  padding: 10px;
   display: inline-block;
   border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #CE695B;
+  color: black;
+  font-size: 20px;
 }
 .reservations {
+  padding: 10px;
   display: inline-block;
   border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #CE695B;
+  color: black;
+  font-size: 20px;
 }
 
 .menu-title {
@@ -67,6 +86,8 @@
 
 .menu-item {
   float: left;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .float-right {
@@ -109,17 +130,36 @@
   margin-top: 20px;
 }
 
-.small-bear1{
+.menu-item-menu-price-container img {
+  border-radius: 50%;
+}
+
+.small-bear1 {
   width: 20px;
-  padding-left: 4px;
+  margin-left: 4px;
+
 }
 
-.small-bear2{
+.small-bear2 {
   width: 27px;
-  padding-left: 4px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+
 }
 
-.small-bear3{
+.small-bear3 {
   width: 30px;
-  padding-left: 4px;
+  margin-left: 4px;
+}
+
+
+.menu-info {
+  background-color: #FDF3E7
+}
+
+
+i {
+  background: white;
+  border: 1px solid gray;
+  margin: 2px;
 }

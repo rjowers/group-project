@@ -6,7 +6,7 @@
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
 // .fa-events-icons-ready{
-//   background-color: #FDF3E7;
+//   background-color: #232B2B;
 // }
 
 /* zocial */
@@ -31,7 +31,7 @@ background-color: #ce695b;
   padding-top: 0px;
   padding-bottom: 4px;
   padding-left: 20px;
-  margin-left: 20px;
+  margin-left: 50px;
   height: 150px;
 }
 
@@ -41,12 +41,12 @@ background-color: #ce695b;
 
 .bear-pic{
   height: 150px;
-  margin-left: 150px;
+  margin-left: 165px;
 }
 
 .bear-pic2{
   height: 150px;
-  margin-left: 100px;
+  margin-left: 200px;
   -moz-transform: scaleX(-1);
  -o-transform: scaleX(-1);
  -webkit-transform: scaleX(-1);
@@ -57,7 +57,7 @@ background-color: #ce695b;
 
 .words{
   display: inline-block;
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .icon-box {
@@ -66,20 +66,25 @@ background-color: #ce695b;
   display: inline-block;
   position: relative;
   height: 100px;
-  width: 219px;
+  width: 150px;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 25px;
   float: right;
   margin-top: 22px;
   margin-right: 20px;
   -moz-border-radius: 15px;
 border-radius: 15px;
-font-size: 24px;
+font-size: 14px;
+
+a{
+  list-style: none;
+  color: #4C5556;
+}
 
 }
 
 .connect{
-  font-size: 20px;
+  font-size: 12px;
 }
 .icons{
 padding-top: 0px;
@@ -111,7 +116,7 @@ li{
       margin-top: 20px;
       -moz-border-radius: 15px;
 border-radius: 15px;
-background-color: #FAF9F5;
+background-color: #232B2B;
 
 
 
@@ -124,7 +129,8 @@ background-color: #FAF9F5;
       padding-bottom: 10px;
       margin-left: 10px;
       margin-right: 10px;
-
+      color: #DC3D24;
+      font-family: 'Leckerli One', cursive;
     }
 
     h2{
@@ -132,6 +138,7 @@ background-color: #FAF9F5;
     font-style: italic;
     font-weight:bold;
     display: inline-block;
+    color: #E3AE57;
     }
 
     .title{
@@ -142,6 +149,7 @@ background-color: #FAF9F5;
     .date{
       padding-left: 60px;
       padding-top: 10px;
+      color: #E3AE57;
     }
 
     .post{
@@ -149,6 +157,7 @@ background-color: #FAF9F5;
       padding-left: 5px;
       padding-right: 5px;
       display: inline-block;
+      color: white;
 
 
 
@@ -182,33 +191,38 @@ margin-left: 50px;
 margin-top: 20px;
 -moz-border-radius: 15px;
 border-radius: 15px;
-background-color: #FAF9F5;
+background-color: #232B2B;
 
 
 .borders {
     border-bottom: solid #C5C5C5 1px;
+    padding-bottom: 0px;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px
 }
-.Today{
-  font-size: 18px;
+
+.Today  {
+  font-size: 16px;
   padding-left: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin-left: 10px;
   margin-right: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: inline-block;
-
+  color: #DC3D24;
+  font-family: 'Leckerli One', cursive;
 }
 
 .price{
   font-size: 16px;
   display: inline-block;
   padding-left: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-family: 'Leckerli One', cursive;
+  color: #DC3D24;
 }
 
 img{
@@ -227,12 +241,14 @@ font-weight:bold;
 display: inline-block;
 padding-left: 5px;
 padding-right: 5px;
+color: #E3AE57;
 }
 
 p{
   padding-left: 5px;
   padding-right: 5px;
   font-size: 12px;
+  color: white;
 }
 
 
@@ -250,7 +266,7 @@ p{
   margin-top: 20px;
   -moz-border-radius: 15px;
 border-radius: 15px;
-background-color: #FAF9F5;
+background-color: #232B2B;
 
   .our-location{
     font-size: 16px;
@@ -261,6 +277,8 @@ background-color: #FAF9F5;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Leckerli One', cursive;
+    color: #DC3D24;
 
   }
 
@@ -272,12 +290,19 @@ background-color: #FAF9F5;
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
+  color: #E3AE57;
 }
 
 .location-info{
   font-size: 11px;
   text-align: center;
   padding-top: 20px;
+  color: white;
+
+a{
+  color: #5BC1CE;
+}
+
 }
 
 }
@@ -300,30 +325,34 @@ background-color: #FAF9F5;
 .blurbs{
   display: flex;
   flex-direction: row;
-  background-color: #FDF3E7;
+  background-color: #a7aaaa;
 }
 
 ///////////////food-photos
 
 .food-photos{
-  background-color: #FDF3E7;
+  background-color: #232B2B;
 }
 
 .food{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 30px;
   text-align: center;
+  font-family: 'Leckerli One', cursive;
+  color: #DC3D24;
 }
 .food-boxes{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 100%;
   display: inline-block;
-  margin-top: 30px;
+  margin: auto;
+  background-color: #232B2B;
 
-  margin-left: 45px;
   float: left;
-  background-color: #FDF3E7;
+
+
+
 
 img{
   height: 200px;
@@ -332,6 +361,8 @@ img{
 border-radius: 15px;
 float: left;
 background-color: #FDF3E7;
+margin-left: 45px;
+margin-top: 50px;
 }
 
 

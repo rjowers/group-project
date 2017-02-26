@@ -19,7 +19,7 @@ function makeMapsBlurb () {
     </div>
      <p class="address">115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303</p>
 
-     <p class="location-info">555-555-5555 • 555-555-5555 • <a href=#>Map</a> •  <a href=#>Directions</a></p>
+     <p class="location-info">555-555-5555 • 555-555-5555 • <a href=https://www.google.com/maps/dir//115+M.L.K.+Jr+Dr+SW+%23400,+Atlanta,+GA+30303/@33.8852421,-84.4916196,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88f50383f2c6abcb:0x67b3f25b819b2d3f!2m2!1d-84.392145!2d33.752069!3e0>Map</a> •  <a href=https://www.google.com/maps/dir//115+M.L.K.+Jr+Dr+SW+%23400,+Atlanta,+GA+30303/@33.8852421,-84.4916196,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88f50383f2c6abcb:0x67b3f25b819b2d3f!2m2!1d-84.392145!2d33.752069!3e0>Directions</a></p>
     </div>
 
     `)

@@ -1,4 +1,7 @@
 import $ from 'jquery';
+import { flickrToken } from "./token.js";
+
+// import {foodPhotos} from "./food-photos.js"
 
 function getFood(data, callback) {
     $.ajax({
@@ -13,12 +16,13 @@ function getFood(data, callback) {
 
 getFood()
 
+
 function putFood (data) {
   console.log (data)
   $(".info-box2").append(
     `
     <div class ="specials-box">
-    <div class="borders"
+    <div class="borders">
     <h1 class="Today">Today's Special</h1>
     <h1 class="price">$${data.entrees[2].price}</h1>
     </div>

@@ -15,9 +15,9 @@ function maketopbar () { $(".top-bar").append(
     <div class="icon-box">
       <span class="Connect">Connect With Us!</span>
       <ul class="icons">
-      <li class="zocial-twitter"></li>
-      <li class="zocial-instagram"></li>
-      <li class="zocial-facebook"></li>
+      <a href="#"><li class="zocial-twitter"></li></a>
+      <a href="#"><li class="zocial-instagram"></li></a>
+      <a href="#"<li class="zocial-facebook"></li></a>
       </ul>
     </div>
     </div>

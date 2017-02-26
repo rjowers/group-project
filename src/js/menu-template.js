@@ -12,7 +12,7 @@ function printMenu(data){
     <div class="menu-item-menu-price-container">
       <div class="menu-item">${data.Beer[count].item}</div>
       <img class="small-bear3" src="./images/bear4.png"/>
-      <div class="menu-item-price">${data.Beer[count].price}</div>
+      <div class="menu-item-price">$${data.Beer[count].price}.00</div>
     </div>
     <div class="menu-item-style">${data.Beer[count].style}</div>
     <div class="menu-description-allergies-favorite-container">
@@ -65,7 +65,7 @@ function printMenu(data){
     <div class="menu-item-menu-price-container">
       <div class="menu-item">${data.entrees[i].item}</div>
       <img class="small-bear2" src="./images/bear2.jpg"/>
-      <div class="menu-item-price">${data.entrees[i].price}</div>
+      <div class="menu-item-price">$${data.entrees[i].price}.00</div>
     </div>
 
     <div class="menu-description-allergies-favorite-container">
@@ -76,6 +76,8 @@ function printMenu(data){
       <div class="allergies1${i} float-right"></div>
     </div>
   `);
+
+
 
   if(data.entrees[i].spicy === 1){
     $(`.spicy${i}`).html(`
@@ -116,15 +118,33 @@ for(var x = data.games.length - 1; x >= 0; x--){
   <div class="menu-item-menu-price-container">
     <div class="menu-item">${data.games[x].item}</div>.
     <img class="small-bear1" src="./images/bear4.jpg"/>
-    <div class="menu-item-price">${data.games[x].price}</div>
+    <div class="menu-item-price">$${data.games[x].price}.00</div>
   </div>
 
   <div class="menu-description-allergies-favorite-container">
     <div class="menu-item-description float-left">${data.games[x].description}</div>-
+    <div class="rating${x} float-right"></div>
+    <div class="online${x} float-right"></div>
     <div class="favorite2${x} float-right"></div>
     <div class="multi-player${x} float-right"></div>
   </div>
 `);
+
+if(data.games[x].rating === "E"){
+  $(`.rating${x}`).html(`
+  <div class="rating-icon">E</div>`);
+}else{
+  $(`.rating${x}`).html(`
+  <div class="rating-icon">M<div>
+    `);
+}
+
+if(data.games[x].online === 1){
+  $(`.online${x}`).html(`
+  <img class="small-info-graphic" src="./images/online.png">`);
+}else{
+  $(`.online${x}`).html("");
+}
 
 if(data.games[x].multiplayer === 1){
   $(`.multi-player${x}`).html(`

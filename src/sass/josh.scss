@@ -49,11 +49,11 @@
 }
 
 .menu-title {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .menu-section-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   padding-top: 10px;
   font-style: italic;
@@ -129,6 +129,8 @@
 .menu-item-menu-price-container {
   border-bottom: 1px dotted gray;
   margin-top: 20px;
+  padding-top: 4px;
+  border-top: 1px dashed gray;
 }
 
 .menu-item-menu-price-container img {
@@ -175,9 +177,16 @@ i {
   margin-left: 2px;
 }
 
+.rating-icon {
+  background-color: white;
+  width: 20px;
+  border: 1px solid gray;
+  margin-top: 2px;
+  margin-left: 4px;
+  text-align: center;
+}
 
-.allery1:hover {
-  width: 40px;
-  background-color: black;
-
+.menu-description-allergies-favorite-container {
+  padding-bottom: 8px;
+  border-bottom: 1px dotted gray;
 }

@@ -21,7 +21,7 @@ import {foodPhotos} from "./food-photos.js"
 
 
 maketopbar();
-foodPhotos();
+//foodPhotos();
 writeMenuInfo();
 
 

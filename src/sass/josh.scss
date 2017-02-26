@@ -35,6 +35,9 @@
 
 .menu-section-title {
   font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  font-style: italic;
 }
 
 .divide-line1 {
@@ -56,10 +59,6 @@
 .menu-info-container {
   border-top: 1px solid gray;
   padding: 10px;
-}
-
-.menu-section-title {
-  padding-top: 10px;
 }
 
 .menu-item-price {
@@ -103,4 +102,24 @@
  transform: scaleX(-1);
  filter: FlipH;
  -ms-filter: "FlipH";
+}
+
+.menu-item-menu-price-container {
+  border-bottom: 1px dotted gray;
+  margin-top: 20px;
+}
+
+.small-bear1{
+  width: 20px;
+  padding-left: 4px;
+}
+
+.small-bear2{
+  width: 27px;
+  padding-left: 4px;
+}
+
+.small-bear3{
+  width: 30px;
+  padding-left: 4px;
 }

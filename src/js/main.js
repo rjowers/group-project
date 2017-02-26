@@ -13,7 +13,7 @@ import {getData, printData} from "./landing.js"
 
 
 
-import {foodPhotos} from "./food-photos.js"
+import {getData2,foodPhotos} from "./food-photos.js"
 
 
 

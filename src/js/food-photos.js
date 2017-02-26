@@ -32,11 +32,11 @@ function foodPhotos (data) {
   var url = data.sizes.size[7].source;
   console.log(data.sizes.size[7].source);
   console.log(url);
-  $(".food-photos").append(
+  $(".food-boxes").append(
     `
-    <div class="food-boxes">
+
     <img src ="${url}">
-    </div>
+
 
     `)
 }
@@ -66,11 +66,11 @@ function foodPhotos2 (data2) {
   var url2 = data2.sizes.size[7].source;
   console.log(data2.sizes.size[7].source);
   console.log(url2);
-  $(".food-photos").append(
+  $(".food-boxes").append(
     `
-    <div class="food-boxes">
+
     <img src ="${url2}">
-    </div>
+
 
     `)
 }
@@ -100,11 +100,11 @@ function foodPhotos3 (data3) {
   var url3 = data3.sizes.size[7].source;
   console.log(data3.sizes.size[7].source);
   console.log(url3);
-  $(".food-photos").append(
+  $(".food-boxes").append(
     `
-    <div class="food-boxes">
+
     <img src ="${url3}">
-    </div>
+
 
     `)
 }
@@ -134,11 +134,11 @@ function foodPhotos4 (data4) {
   var url4 = data4.sizes.size[5].source;
   console.log(data4.sizes.size[5].source);
   console.log(url4);
-  $(".food-photos").append(
+  $(".food-boxes").append(
     `
-    <div class="food-boxes">
+
     <img src ="${url4}">
-    </div>
+
 
     `)
 }
@@ -167,14 +167,16 @@ function foodPhotos5 (data5) {
   var url5 = data5.sizes.size[5].source;
   console.log(data5.sizes.size[5].source);
   console.log(url5);
-  $(".food-photos").append(
+  $(".food-boxes").append(
     `
-    <div class="food-boxes">
+
     <img src ="${url5}">
-    </div>
+    
 
     `)
 }
+
+export {foodPhotos}
 
 // <div class="food-boxes">
 // <img src ="https://s-media-cache-ak0.pinimg.com/564x/f9/db/0e/f9db0ed618459b5702cb0d35246ecab.jpg">

@@ -5,6 +5,9 @@
 
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
+// .fa-events-icons-ready{
+//   background-color: #FDF3E7;
+// }
 
 /* zocial */
 [class*="zocial-"]:before {
@@ -313,16 +316,25 @@ background-color: #FAF9F5;
   text-align: center;
 }
 .food-boxes{
-  height: 216px;
-  width: 216px;
+  height: 200px;
+  width: 200px;
   display: inline-block;
-  padding-right: 20px;
-  margin-left: 30px;
+  margin-top: 30px;
+
+  margin-left: 45px;
+  float: left;
+  background-color: #FDF3E7;
 
 img{
+  height: 200px;
+  width: 200px;
   -moz-border-radius: 15px;
 border-radius: 15px;
+float: left;
+background-color: #FDF3E7;
 }
+
+
 }
 
 

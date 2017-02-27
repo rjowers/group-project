@@ -26,7 +26,7 @@ function putFood (data) {
     <h1 class="Today">Today's Special</h1>
     <h1 class="price">$${data.entrees[2].price}</h1>
     </div>
-    <img src ="https://s-media-cache-ak0.pinimg.com/564x/f9/db/0e/f9db0ed618459b5702cb30d35246ecab.jpg">
+    <img src ="https://farm5.staticflickr.com/4146/5064475808_6ae43bd6e8_b.jpg">
     <h2 class="items">${data.entrees[2].item}</h2>
     <p>${data.entrees[2].description}<p>
     </div>

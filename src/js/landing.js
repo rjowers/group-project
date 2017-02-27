@@ -8,7 +8,7 @@ function getData (search) {
       dataType: 'json',
     data: {
       method: "flickr.photos.getSizes",
-      api_key: "5e869a2e897ce380cedd57cf87d3f036",
+      api_key: flickrToken,
       photo_id: "298845578",
       format: "json",
       nojsoncallback: "1"
